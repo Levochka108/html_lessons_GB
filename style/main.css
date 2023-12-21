@@ -1,0 +1,77 @@
+.Main__page {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+    margin: 0 auto; /* Центрирует блок по горизонтали */
+    width: 1319px;
+    height: 928px;
+    background-color: aquamarine;
+}
+
+.header {
+    display: flex; /* Устанавливает контейнер flex */
+    justify-content: space-around; /* Центрирует дочерние элементы по горизонтали */
+    align-items: center; /* Центрирует дочерние элементы по вертикали */
+    width: 1289px;
+    height: 114px;
+    background-color: rgb(231, 164, 76);
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 137px;
+    height: 40px;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color: aquamarine;
+}
+
+.logo__content {
+    display: flex;
+    align-items: center;
+}
+
+.grow {
+    color: rgb(0, 0, 0);
+}
+
+.be {
+    color: #F25822;
+}
+
+.logo__image {
+    width: 35px; /* Размер изображения логотипа */
+    height: 40px; /* Размер изображения логотипа */
+    margin-right: 10px; /* Расстояние между изображением и текстом */
+}
+
+
+.menu__links {
+    display: flex;
+    width: 556px;
+    height: 40px;
+}
+
+.menu__links a {
+    flex: 1; /* Равномерное распределение пространства между ссылками */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000; /* Используем указанный цвет текста */
+    font-family: Gilroy-Medium; /* Используем указанный шрифт */
+    font-size: 14px; /* Используем указанный размер шрифта */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: color 0.3s; /* Плавное изменение цвета текста */
+}
+
+
+.menu__links a:hover {
+    color: rgb(255, 69, 0); /* Рыжий цвет при наведении курсора */
+}
