@@ -1,11 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Для элементов, где нужен жирный вариант шрифта */
+.bold-text {
+    font-weight: 700;
+}
+
 .Main__page {
     display: flex;
     justify-content: center; /* Выравнивание по горизонтали */
-    align-items: center; /* Выравнивание по вертикали */
+     /* align-items: center; Выравнивание по вертикали */
     margin: 0 auto; /* Центрирует блок по горизонтали */
     width: 1319px;
     height: 928px;
     background-color: aquamarine;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -63,8 +78,8 @@
     justify-content: center;
     text-decoration: none;
     color: #000; /* Используем указанный цвет текста */
-    font-family: Gilroy-Medium; /* Используем указанный шрифт */
-    font-size: 14px; /* Используем указанный размер шрифта */
+    font-family: Gilroy-Bolt; /* Используем указанный шрифт */
+    font-size: 18px; /* Используем указанный размер шрифта */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -74,4 +89,104 @@
 
 .menu__links a:hover {
     color: rgb(255, 69, 0); /* Рыжий цвет при наведении курсора */
+}
+
+.main__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 1274px;
+    height: 536px;
+    background-color: bisque;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.left__rec{
+    display: flex;
+    align-items: start;
+    width: 589px;
+    height: 494px;
+    background-color: aqua;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.main_text_in_left_rec{
+    display: flex;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 522px;
+    height: 222px;
+}
+.sub_title{
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 466px;
+    height: 48px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    width: 374px;
+    height: 94px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 140px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.orange-button {
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #fff;
+    /* Adjust text color as needed */
+}
+
+.transparent-button {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #F25822;
+}
+
+.transparent-button:hover {
+    background: #F25822;
+    color: #fff;
+}
+
+
+
+.footer{
+    display: flex;
+    width: 1240px;
+    height: 158px;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
 }
