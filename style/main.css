@@ -1,146 +1,152 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf') format('truetype');
+    /* Укажите правильный путь к файлу шрифта Roboto Regular в формате ttf */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Для элементов, где нужен жирный вариант шрифта */
 .bold-text {
     font-weight: 700;
 }
 
 .Main__page {
     display: flex;
-    justify-content: center; /* Выравнивание по горизонтали */
-     /* align-items: center; Выравнивание по вертикали */
-    margin: 0 auto; /* Центрирует блок по горизонтали */
-    width: 1319px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1319px;
     height: 928px;
-    background-color: aquamarine;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.header {
-    display: flex; /* Устанавливает контейнер flex */
-    justify-content: space-around; /* Центрирует дочерние элементы по горизонтали */
-    align-items: center; /* Центрирует дочерние элементы по вертикали */
-    width: 1289px;
+header {
+    display: flex;
+    width: 100%;
+    max-width: 1289px;
     height: 114px;
-    background-color: rgb(231, 164, 76);
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
 }
 
 .logo__container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 137px;
+    justify-content: flex-start;
+    max-width: 1030px;
     height: 40px;
-    font-family: Gilroy-Bold;
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    background-color: aquamarine;
 }
 
-.logo__content {
-    display: flex;
-    align-items: center;
+.logo__image {
+    max-height: 40px;
+    margin-right: 10px;
 }
 
 .grow {
-    color: rgb(0, 0, 0);
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .be {
     color: #F25822;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.logo__image {
-    width: 35px; /* Размер изображения логотипа */
-    height: 40px; /* Размер изображения логотипа */
-    margin-right: 10px; /* Расстояние между изображением и текстом */
+.menu{
+    width: 556px;
+    height: 40px;
+
 }
-
-
 .menu__links {
     display: flex;
-    width: 556px;
+    width: 100%;
+    max-width: 556px;
     height: 40px;
 }
 
 .menu__links a {
-    flex: 1; /* Равномерное распределение пространства между ссылками */
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #000; /* Используем указанный цвет текста */
-    font-family: Gilroy-Bolt; /* Используем указанный шрифт */
-    font-size: 18px; /* Используем указанный размер шрифта */
-    font-style: normal;
+    color: #000;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
-    transition: color 0.3s; /* Плавное изменение цвета текста */
+    transition: color 0.3s;
 }
-
 
 .menu__links a:hover {
-    color: rgb(255, 69, 0); /* Рыжий цвет при наведении курсора */
+    color: #ff4500;
 }
 
-.main__container{
+.main__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+   justify-content:  space-around;
     flex-direction: column-reverse;
-    width: 1274px;
+    width: 100%;
+    max-width: 1274px;
     height: 536px;
-    background-color: bisque;
     z-index: 1;
     flex-wrap: wrap;
 }
 
-.left__rec{
+.left__rec {
     display: flex;
     align-items: start;
     width: 589px;
     height: 494px;
-    background-color: aqua;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
-.main_text_in_left_rec{
-    display: flex;
+
+.main_text_in_left_rec {
     color: #000;
-    font-family: Gilroy-Bold;
     font-size: 60px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 522px;
     height: 222px;
 }
-.sub_title{
+
+.sub_title {
     color: #888;
-    font-family: Gilroy-Medium;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 466px;
     height: 48px;
 }
+
 .button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
-    width: 374px;
+    width: 100%;
+    max-width: 374px;
     height: 94px;
     flex-wrap: wrap;
     align-items: center;
@@ -155,18 +161,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: #FFF;
-    font-family: Gilroy-Bold;
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: 'Roboto', sans-serif;
 }
 
 .orange-button {
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
-    color: #fff;
-    /* Adjust text color as needed */
 }
 
 .transparent-button {
@@ -180,11 +183,10 @@ button {
     color: #fff;
 }
 
-
-
-.footer{
+.footer {
     display: flex;
-    width: 1240px;
+    width: 100%;
+    max-width: 1240px;
     height: 158px;
     background-color: #ffffff;
     justify-content: space-around;
